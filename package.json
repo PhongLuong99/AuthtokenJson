@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "demo json",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js",
-    "dev" : "nodemon main.js"
+    "dev": "nodemon main.js",
+    "startAuthserver": "nodemon authserver.js"
+
   },
   "keywords": [
     "json-server"
@@ -15,9 +17,12 @@
   "author": "Phong Luong",
   "license": "MIT",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "json-server": "^0.17.0",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.19"
   }
 }

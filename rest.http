@@ -1,0 +1,38 @@
+POST http://localhost:5500/login
+
+Content-Type: application/json
+
+{
+    "name": "Sang"
+}
+
+###
+GET http://localhost:3000/events 
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTg3Mjk1NzQsImV4cCI6MTY1ODcyOTYwNH0.UoAmA_p53iNf9gTLZcoi0j9AudqMqiodvsaF7bVaW6M
+
+###
+
+POST http://localhost:5500/refreshToken
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTg3Mjk1NTd9.nRNwQGi0OnyOtaAccS5_gl_2-uupYEJUVB_-hC08W6w"
+}
+
+###
+POST http://localhost:5500/logout
+
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTg3MjIzODJ9.5ue-CGfJZodEBbSU2Ord2Y7kYPECYMSQh1aBUUxePtk"
+}
+
+###
+
+POST http://localhost:3000/users
+
+{
+    "id": 2,
+    "name": "Sang"
+}
